@@ -1,0 +1,29 @@
+### Gradle ###
+.gradle/
+build/
+capture/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Kotlin ###
+.kotlin/
+kotlin-js-store/
+
+### OS ###
+.DS_Store
+Thumbs.db
+*.log
+local.properties
+
+### VS Code / Eclipse / NetBeans ###
+.vscode/
+.classpath
+.project
+.settings/
+bin/
