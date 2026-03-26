@@ -1,10 +1,11 @@
 plugins {
     kotlin("jvm") version "2.2.0"
     `maven-publish`
+    `java-library`
 }
 
 group = "io.github.gyroskalitz"
-version = System.getenv("RELEASE_VERSION")
+version = System.getenv("RELEASE_VERSION")?:"1.0.0"
 
 // 配置发布内容
 publishing {
