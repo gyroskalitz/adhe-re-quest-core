@@ -1,6 +1,6 @@
 # AdheReQuest Core
 
-**AdheReQuest Core** 是 `AdheReQuest` App的核心数据类型库。该库旨在通过分离“问题”与“数据内容”，将问卷内容转化为便于处理的结构化数据，并支持自动填充机制，以图实现统一的数据描述协议，实现跨App、跨平台的问卷数据标准化。
+**AdheReQuest Core** 是 [AdheReQuest](https://github.com/gyroskalitz/adhe-re-quest) App的核心数据类型库。该库旨在通过分离“问题”与“数据内容”，将问卷内容转化为便于处理的结构化数据，并支持自动填充机制，以图实现统一的数据描述协议，实现跨App、跨平台的问卷数据标准化。
 
 ## 1. 核心理念
 
@@ -140,3 +140,7 @@ val savedString = processor.serialize(property.info, property.value)
 val restoredValue = processor.deserialize(property.info, savedString)
 
 ```
+
+## 3. 注意事项
+
+如果在打Release包时启用了R8优化，鉴于本项目使用了Gson，**务必**配置proguard-rules.pro文件。
